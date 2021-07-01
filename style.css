@@ -1,0 +1,103 @@
+/* starbucks color : #008248 */
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   color: rgb(0,0,0,.87);
+}
+header{
+    height: 101px;
+    box-shadow: 0 4px 3px -3px rgb(0 0 0 / 10%),  0 4px 2px -2px rgb(0 0 0 / 7%);
+  z-index: 10;
+  /*to show the box shadow underneath */
+  position: relative;
+  /*Relative more important then non relative sections */
+
+}
+.header-container{
+    max-width: 1440px;
+    /*to center the div*/
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.left-nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo{
+    height: 51px;
+    width: 51px;
+}
+.left-nav nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+.left-nav nav ul li{
+    font-weight: 700;
+    padding-left: 24px;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+.left-nav nav ul li:hover{
+    color: #008248;
+    cursor: pointer;
+}
+/*height 100% of .logo(51px) */
+.logo img{
+    height: 100%;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+.find-store{
+    display: flex;
+    align-items:center ;
+     margin-right: 40px;
+     font-weight: 600;
+     font-size: 14px;
+}
+.find-store i{
+padding-right: 8px;
+font-size: 14px;
+}
+.sign-in, .join-now{
+    padding: 7px 16px;
+    border: 1px solid;
+    border-radius: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 14px;
+}
+.sign-in{
+    margin-right: 16px;
+}
+.join-now{
+    background-color: rgb(0,0,0,.87);
+    color: white;
+
+}
+.join-now:hover{
+    background-color: rgba(0,0,0,0.7);
+    border-color: rgba(0 ,0 ,0,0.7);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.sign-in:hover{
+    background-color: rgba(0,0,0,.06);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.find-store:hover{
+    color: #008248;
+    cursor: pointer;
+}
